@@ -1,0 +1,27 @@
+{% load static %}
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Elefante Veterinaria</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}" />
+  </head>
+  <body>
+    <header class="navbar">
+      <img
+        src="{% static 'imagenes/LOGO.png' %}"
+        alt="Logo Elefante Veterinaria"/>
+      <nav>
+        <a href="{% url 'index' %}">Inicio</a>
+        <a href="{% url 'doctores' %}">Nuestros doctores</a>
+        <a href="{% url 'servicios' %}">Servicios</a>
+        <a href="{% url 'productos' %}">Productos</a>
+        <a href="{% url 'sucursales' %}">Sucursales</a>
+      </nav>
+    </header>
+
+    <footer>
+      <p>&copy; 2026 - Facultad de Contaduría Pública y Administración</p>
+    </footer>
+  </body>
+</html>

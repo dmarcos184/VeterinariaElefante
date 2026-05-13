@@ -1,0 +1,51 @@
+/*General*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: lightgray;
+  padding: 0px;
+}
+
+.navbar img {
+  width: 180px;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar nav a {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 30px;
+  background-color: rgb(104, 104, 104);
+}
+
+footer p {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 12px;
+  color: white;
+}
+
+footer img {
+  width: 25px;
+}
