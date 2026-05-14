@@ -1,0 +1,43 @@
+{% load static %}
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Elefante Veterinaria</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}" />
+  </head>
+  <body>
+    <header class="navbar">
+      <img
+        src="{% static 'imagenes/LOGO.png' %}"
+        alt="Logo Elefante Veterinaria"/>
+      <nav>
+        <a href="{% url 'index' %}">Inicio</a>
+        <a href="{% url 'doctores' %}">Nuestros doctores</a>
+        <a href="{% url 'servicios' %}">Servicios</a>
+        <a href="{% url 'productos' %}">Productos</a>
+        <a href="{% url 'sucursales' %}">Sucursales</a>
+      </nav>
+    </header>
+
+    <h1>Nuestros Doctores</h1>
+
+    <p>Conoce al equipo de especialistas que cuida la salud de tus mascotas.</p>
+
+    <div>
+        <h2>Dr. Juan Pérez</h2>
+        <img src="{% static 'imgagenes/doctor1.jpg' %}" alt="Doctor veterinario" width="250">
+        <p>Especialista en medicina general para perros y gatos.</p>
+    </div>
+
+    <div>
+        <h2>Dra. Ana López</h2>
+        <img src="{% static 'imgagenes/doctor2.jpg' %}" alt="Doctora veterinaria" width="250">
+        <p>Especialista en cirugía y cuidado de animales pequeños.</p>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 - Facultad de Contaduría Pública y Administración</p>
+    </footer>
+  </body>
+</html>
