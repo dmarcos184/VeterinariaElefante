@@ -49,3 +49,25 @@ footer p {
 footer img {
   width: 25px;
 }
+
+.pagina-doctores {
+    background-color: #f4f8ff;
+    font-family: Arial, sans-serif;
+}
+
+.pagina-doctores h1 {
+    color: darkblue;
+    text-align: center;
+}
+
+.pagina-doctores div {
+    border: 2px solid #ccc;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.pagina-doctores img {
+    border-radius: 10px;
+}
