@@ -11,7 +11,7 @@
     <h1>Comida</h1>
     <div class="contenedor">
         <div class="producto">
-            <img src="{% static 'imagenes/comida1.jpeg' %}" alt="dog chaw">
+            <img src="{% static 'imagenes/comidap1.jpeg' %}" alt="dog chaw">
             <h3>Croquetas para cachorro Premium 3kg </h3>
             <p>Especial para crecimiento saludable cachorros y perros pequeños..</p>
             <p class="precio">$450 MXN</p>
@@ -49,35 +49,35 @@
 
   <div class="contenedor">
     <div class="producto">
-      <img src="{% static 'imagenes/premiosp1.jpg' %}" alt="Pedigree Biscrok Cachorro">
+      <img src="{% static 'imagenes/premiop1.jpg' %}" alt="Pedigree Biscrok Cachorro">
       <h3>Pedigree Biscrok Cachorro</h3>
       <p>Galletas con calcio y vitaminas para cachorros.</p>
       <p class="precio">$85 MXN</p>
     </div>
 
     <div class="producto">
-      <img src="{% static 'imagenes/premiosp2.jpg' %}" alt="Fruitables Pumpkin & Cranberry">
+      <img src="{% static 'imagenes/premiop2.png' %}" alt="Fruitables Pumpkin & Cranberry">
       <h3>Fruitables Pumpkin & Cranberry</h3>
       <p>Premios horneados bajos en calorías con sabor a calabaza y arándano.</p>
       <p class="precio">$120 MXN</p>
     </div>
 
     <div class="producto">
-      <img src="{% static 'imagenes/premiosp3.jpg' %}" alt="Purina Pro Plan Lite Snackers">
+      <img src="{% static 'imagenes/premiop3.png' %}" alt="Purina Pro Plan Lite Snackers">
       <h3>Purina Pro Plan Lite Snackers</h3>
       <p>Premios horneados bajos en grasa y ricos en fibra.</p>
       <p class="precio">$150 MXN</p>
     </div>
 
     <div class="producto">
-      <img src="{% static 'imagenes/premiosp4.jpg' %}" alt="Smart Treats Calming">
+      <img src="{% static 'imagenes/premiop4.jpg' %}" alt="Smart Treats Calming">
       <h3>Smart Treats Calming</h3>
       <p>Premios naturales y calmantes hechos a mano.</p>
       <p class="precio">$130 MXN</p>
     </div>
 
     <div class="producto">
-      <img src="{% static 'imagenes/premiosp5.jpg' %}" alt="Pedigree Dentastix">
+      <img src="{% static 'imagenes/premiop5.png' %}" alt="Pedigree Dentastix">
       <h3>Pedigree Dentastix</h3>
       <p>Premios dentales para razas pequeñas, reducen placa y sarro.</p>
       <p class="precio">$95 MXN</p>
@@ -88,35 +88,35 @@
 
   <div class="contenedor">
     <div class="producto">
-      <img src="{% static 'imagenes/cama1.jpg' %}" alt="Cama acolchada verde">
+      <img src="{% static 'imagenes/camap1.jpg' %}" alt="Cama acolchada verde">
       <h3>Cama acolchada verde</h3>
       <p>Diseño ovalado con cojín suave y entrada baja.</p>
       <p class="precio">$750 MXN</p>
     </div>
 
     <div class="producto">
-      <img src="{% static 'imagenes/cama2.jpg' %}" alt="Cama moderna de madera">
+      <img src="{% static 'imagenes/camap2.jpg' %}" alt="Cama moderna de madera">
       <h3>Cama moderna de madera</h3>
       <p>Estilo elegante con patas de madera y cojín gris.</p>
       <p class="precio">$1,200 MXN</p>
     </div>
 
     <div class="producto">
-      <img src="{% static 'imagenes/cama3.jpg' %}" alt="Cama gigante peluche gris">
+      <img src="{% static 'imagenes/camap3.jpg' %}" alt="Cama gigante peluche gris">
       <h3>Cama gigante peluche gris</h3>
       <p>Espacio amplio y acolchado para máximo confort.</p>
       <p class="precio">$1,500 MXN</p>
     </div>
 
     <div class="producto">
-      <img src="{% static 'imagenes/cama4.jpg' %}" alt="Cama rectangular gris">
+      <img src="{% static 'imagenes/camap4.jpg' %}" alt="Cama rectangular gris">
       <h3>Cama rectangular gris</h3>
       <p>Diseño clásico con bordes elevados y tela suave.</p>
       <p class="precio">$900 MXN</p>
     </div>
 
     <div class="producto">
-      <img src="{% static 'imagenes/cama5.jpg' %}" alt="Cama peluche beige">
+      <img src="{% static 'imagenes/camap5.jpg' %}" alt="Cama peluche beige">
       <h3>Cama peluche beige</h3>
       <p>Material extra suave, ideal para perros pequeños.</p>
       <p class="precio">$1,100 MXN</p>
@@ -125,6 +125,7 @@
 </body>
 
     
+    
 </body>
-<a href="productos.html">regresar a productos </a>
+<a href="{% url 'productos' %}" class="boton-producto">Regresar</a>
 </html>

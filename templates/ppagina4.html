@@ -13,35 +13,35 @@
   <h2>Comida</h2>
   <div class="contenedor">
     <div class="producto">
-      <img src="{% static 'imagenes/comidap1.jpg' %}" alt="Lomas Betta Premium">
+      <img src="{% static 'imagenes/comidaPEZ1.png' %}" alt="Lomas Betta Premium">
       <h3>Lomas Betta Premium</h3>
       <p>Alimento premium para pez Betta.</p>
       <p class="precio">$90 MXN</p>
     </div>
 
     <div class="producto">
-      <img src="{% static 'imagenes/comidap2.jpg' %}" alt="Incros Vital Flake">
+      <img src="{% static 'imagenes/comidaPEZ2.png' %}" alt="Incros Vital Flake">
       <h3>Incros Vital Flake</h3>
       <p>Escamas nutritivas para peces ornamentales.</p>
       <p class="precio">$120 MXN</p>
     </div>
 
     <div class="producto">
-      <img src="{% static 'imagenes/comidap3.jpg' %}" alt="Tetra Goldfish Flakes">
+      <img src="{% static 'imagenes/comidaPEZ3.png' %}" alt="Tetra Goldfish Flakes">
       <h3>Tetra Goldfish Flakes</h3>
       <p>Escamas enriquecidas con vitamina C.</p>
       <p class="precio">$150 MXN</p>
     </div>
 
     <div class="producto">
-      <img src="{% static 'imagenes/comidap4.jpg' %}" alt="Omega One Cíclidos">
+      <img src="{% static 'imagenes/comidaPEZ4.png' %}" alt="Omega One Cíclidos">
       <h3>Omega One Cíclidos</h3>
       <p>Pellets con Omega 3 y 6 para cíclidos.</p>
       <p class="precio">$200 MXN</p>
     </div>
 
     <div class="producto">
-      <img src="{% static 'imagenes/comidap5.jpg' %}" alt="Tropical Supervit">
+      <img src="{% static 'imagenes/comidaPEZ5.png' %}" alt="Tropical Supervit">
       <h3>Tropical Supervit</h3>
       <p>Mezcla de 8 escamas profesionales.</p>
       <p class="precio">$180 MXN</p>
@@ -52,40 +52,34 @@
   <h2>Extras para Pecera</h2>
   <div class="contenedor">
     <div class="producto">
-      <img src="{% static 'imagenes/extrap1.jpg' %}" alt="Caracoles acuáticos">
+      <img src="{% static 'imagenes/extrapecera1.jpg' %}" alt="Caracoles acuáticos">
       <h3>Caracoles acuáticos</h3>
       <p>Ayudan a mantener limpia la pecera.</p>
       <p class="precio">$60 MXN</p>
     </div>
 
     <div class="producto">
-      <img src="{% static 'imagenes/extrap2.jpg' %}" alt="Camarones ornamentales">
+      <img src="{% static 'imagenes/extrapecera2.jpg' %}" alt="Camarones ornamentales">
       <h3>Camarones ornamentales</h3>
       <p>Coloridos y útiles para el ecosistema.</p>
       <p class="precio">$100 MXN</p>
     </div>
 
     <div class="producto">
-      <img src="{% static 'imagenes/extrap3.jpg' %}" alt="Plantas flotantes">
+      <img src="{% static 'imagenes/extrapecera3.jpg' %}" alt="Plantas flotantes">
       <h3>Plantas flotantes</h3>
       <p>Decoración natural y refugio para peces.</p>
       <p class="precio">$80 MXN</p>
     </div>
 
     <div class="producto">
-      <img src="{% static 'imagenes/extrap4.jpg' %}" alt="Rocas decorativas">
+      <img src="{% static 'imagenes/extrapecera4.jpeg' %}" alt="Rocas decorativas">
       <h3>Rocas decorativas</h3>
       <p>Ideal para acuarios plantados y paisajismo.</p>
       <p class="precio">$150 MXN</p>
     </div>
 
-    <div class="producto">
-      <img src="{% static 'imagenes/extrap5.jpg' %}" alt="Filtro de agua">
-      <h3>Filtro de agua</h3>
-      <p>Purificación eficiente para acuarios pequeños.</p>
-      <p class="precio">$350 MXN</p>
-    </div>
-  </div>
+  
 
   <!-- Sección Peceras -->
   <h2>Peceras</h2>
@@ -98,34 +92,34 @@
     </div>
 
     <div class="producto">
-      <img src="{% static 'imagenes/pecera2.jpg' %}" alt="Acuario plantado">
+      <img src="{% static 'imagenes/pecera2.png' %}" alt="Acuario plantado">
       <h3>Acuario plantado</h3>
       <p>Montaje naturalista con iluminación LED.</p>
       <p class="precio">$2,500 MXN</p>
     </div>
 
     <div class="producto">
-      <img src="{% static 'imagenes/pecera3.jpg' %}" alt="Pecera pequeña minimalista">
+      <img src="{% static 'imagenes/pecera3.png' %}" alt="Pecera pequeña minimalista">
       <h3>Pecera minimalista</h3>
       <p>Diseño compacto ideal para espacios reducidos.</p>
       <p class="precio">$900 MXN</p>
     </div>
 
     <div class="producto">
-      <img src="{% static 'imagenes/pecera4.jpg' %}" alt="Acuario pequeña con plantas">
+      <img src="{% static 'imagenes/pecera4.png' %}" alt="Acuario pequeña con plantas">
       <h3>Acuario pequeño</h3>
       <p>Tanque con plantas  verdes, filtración avanzada.</p>
       <p class="precio">$3,800 MXN</p>
     </div>
 
     <div class="producto">
-      <img src="{% static 'imagenes/pecera5.jpg' %}" alt="Pecera Premium con gabinete sobre ella con filtro y luces">
+      <img src="{% static 'imagenes/pecera5.png' %}" alt="Pecera Premium con gabinete sobre ella con filtro y luces">
       <h3>Pecera rectangular con buro</h3>
       <p>Diseño básico con grava blanca y filtro.</p>
       <p class="precio">$9,100 MXN</p>
     </div>
   </div>
 
-  <a href="productos.html">Regresar</a>
+    <a href="{% url 'productos' %}" class="boton-producto">Regresar</a>
 </body>
 </html>

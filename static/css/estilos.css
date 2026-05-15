@@ -137,16 +137,6 @@ h1 {
   color: #007BFF;
 }
 
-/*Botones*/
-button {
-  background-color: #007BFF;
-  color: white;
-  padding: 8px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
 
 button:hover {
   background-color: #0056b3;
@@ -200,4 +190,19 @@ a:hover {
 .precio {
   font-weight: bold;
   color: #007BFF;
+}
+
+.boton-producto {
+  display: inline-block;
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.boton-producto:hover {
+  background-color: #0056b3;
 }
