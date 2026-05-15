@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}" />
+    <title>productos</title>
+</head>
+<body>
+    <h1>¿que es tu mascota?</h1>
+
+    <div class="contenedor">
+        <div class="item">
+            <img src="{% static 'imagenes/perros.jpg'%}" alt="perros">
+            <button onclick="location.href='ppagina1.html' ">Página 1</button>
+        </div>
+
+        <div class="item">
+            <img src="{% static 'imagenes/gatos.jpg' %}" alt="gatos">
+            <button onclick="location.href='ppagina2.html' ">Página 2</button>
+        </div>
+
+        <div class="item">
+            <img src="{% static 'imagenes/aves.jpg' %}" alt="aves">
+            <button onclick="location.href='ppagina3.html' ">Página 3</button>
+        </div>
+
+        <div class="item">
+            <img src="{% static 'imagenes/pez.jpg' %}" alt="pez">
+            <button onclick="location.href='ppagina4.html' ">Página 4</button>
+        </div>
+        <a href="index.html">regresar </a>
+    </div>    
+
+
+</body>
+</html>
