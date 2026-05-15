@@ -1,0 +1,89 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Productos para Aves</title>
+  <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+</head>
+<body>
+  <h1>Productos para Aves</h1>
+
+
+  <h2>Comida</h2>
+  <div class="contenedor">
+    <div class="producto">
+      <img src="{% static 'imagenes/comidaa1.jpg' %}" alt="Beaphar Universal">
+      <h3>Beaphar Universal</h3>
+      <p>Alimento para aves frugívoras e insectívoras.</p>
+      <p class="precio">$120 MXN</p>
+    </div>
+
+    <div class="producto">
+      <img src="{% static 'imagenes/comidaa2.jpg' %}" alt="Mazuri Large Bird Diet">
+      <h3>Mazuri Large Bird Diet</h3>
+      <p>Nutrición para loros grandes, con Omega 3.</p>
+      <p class="precio">$250 MXN</p>
+    </div>
+
+    <div class="producto">
+      <img src="{% static 'imagenes/comidaa3.jpg' %}" alt="RedKite Aves Silvestres">
+      <h3>RedKite Aves Silvestres</h3>
+      <p>Fórmula balanceada con vitaminas y minerales.</p>
+      <p class="precio">$180 MXN</p>
+    </div>
+  </div>
+
+
+  <h2>Comederos</h2>
+  <div class="contenedor">
+    <div class="producto">
+      <img src="{% static 'imagenes/comedero1.jpg' %}" alt="Comedero de maní">
+      <h3>Comedero de maní</h3>
+      <p>Diseño de malla metálica para aves pequeñas.</p>
+      <p class="precio">$300 MXN</p>
+    </div>
+
+    <div class="producto">
+      <img src="{% static 'imagenes/comedero2.jpg' %}" alt="Comedero pagoda">
+      <h3>Comedero estilo pagoda</h3>
+      <p>Techo decorativo y bandeja amplia para semillas.</p>
+      <p class="precio">$450 MXN</p>
+    </div>
+
+    <div class="producto">
+      <img src="{% static 'imagenes/comedero3.jpg' %}" alt="Comedero cilíndrico">
+      <h3>Comedero cilíndrico</h3>
+      <p>Plástico transparente con base circular.</p>
+      <p class="precio">$380 MXN</p>
+    </div>
+  </div>
+
+
+  <h2>Jaulas</h2>
+  <div class="contenedor">
+    <div class="producto">
+      <img src="{% static 'imagenes/jaula1.jpg' %}" alt="Jaula rectangular madera">
+      <h3>Jaula rectangular de madera</h3>
+      <p>Con perchas y nidos, ideal para exteriores.</p>
+      <p class="precio">$1,200 MXN</p>
+    </div>
+
+    <div class="producto">
+      <img src="{% static 'imagenes/jaula2.jpg' %}" alt="Jaula hexagonal verde">
+      <h3>Jaula hexagonal</h3>
+      <p>Diseño con ruedas y perchas internas.</p>
+      <p class="precio">$1,500 MXN</p>
+    </div>
+
+    <div class="producto">
+      <img src="{% static 'imagenes/jaula3.jpg' %}" alt="Jaula grande metálica">
+      <h3>Jaula grande metálica</h3>
+      <p>Con techo triangular y comederos integrados.</p>
+      <p class="precio">$2,000 MXN</p>
+    </div>
+  </div>
+
+  <a href="productos.html">Regresar</a>
+</body>
+</html>

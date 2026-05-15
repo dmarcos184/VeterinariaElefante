@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Productos para Gatos</title>
+  <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+</head>
+<body>
+  <h1>Productos para Gatos</h1>
+
+  <h2>Comida</h2>
+  <div class="contenedor">
+    <div class="producto">
+      <img src="{% static 'imagenes/comidag1.jpg' %}" alt="Ricocat Adultos">
+      <h3>Ricocat Adultos</h3>
+      <p>Carne, salmón y leche. Nutrición completa.</p>
+      <p class="precio">$120 MXN</p>
+    </div>
+
+    <div class="producto">
+      <img src="{% static 'imagenes/comidag2.jpg' %}" alt="Purina Felix Triple Delicious">
+      <h3>Purina Felix Triple Delicious</h3>
+      <p>Pollo, pavo y pato. 100% balanceado.</p>
+      <p class="precio">$150 MXN</p>
+    </div>
+
+    <div class="producto">
+      <img src="{% static 'imagenes/comidag3.jpg' %}" alt="Purina ONE Adultos">
+      <h3>Purina ONE Adultos</h3>
+      <p>Con pollo y carne de verdad. Resultados visibles en 28 días.</p>
+      <p class="precio">$180 MXN</p>
+    </div>
+  </div>
+
+
+  <h2>Premios</h2>
+  <div class="contenedor">
+    <div class="producto">
+      <img src="{% static 'imagenes/premiog1.jpg' %}" alt="Whiskas Temptations Res">
+      <h3>Whiskas Temptations</h3>
+      <p>Premios sabor res. Crujientes por fuera, suaves por dentro.</p>
+      <p class="precio">$85 MXN</p>
+    </div>
+
+    <div class="producto">
+      <img src="{% static 'imagenes/premiog2.jpg' %}" alt="Felix Travesuras Ocean Mix">
+      <h3>Felix Travesuras Ocean Mix</h3>
+      <p>Sabores a camarón, cangrejo y atún.</p>
+      <p class="precio">$95 MXN</p>
+    </div>
+
+    <div class="producto">
+      <img src="{% static 'imagenes/premiog3.jpg' %}" alt="Whiskas Sticks Salmón">
+      <h3>Whiskas Sticks</h3>
+      <p>Premios ricos en salmón. Formato en barritas.</p>
+      <p class="precio">$70 MXN</p>
+    </div>
+  </div>
+
+
+  <h2>Camas</h2>
+  <div class="contenedor">
+    <div class="producto">
+      <img src="{% static 'imagenes/camag1.jpg' %}" alt="Cama tipo iglú gris">
+      <h3>Cama tipo iglú</h3>
+      <p>Diseño cerrado con cojín suave y juguete colgante.</p>
+      <p class="precio">$650 MXN</p>
+    </div>
+
+    <div class="producto">
+      <img src="{% static 'imagenes/camag2.jpg' %}" alt="Casa de tela para gatos">
+      <h3>Casa de tela</h3>
+      <p>Espacio multifuncional con rascador y bola de juego.</p>
+      <p class="precio">$900 MXN</p>
+    </div>
+
+    <div class="producto">
+      <img src="{% static 'imagenes/camag3.jpg' %}" alt="Cama montada en pared">
+      <h3>Cama montada en pared</h3>
+      <p>Estructura de madera con domo acrílico. Diseño moderno.</p>
+      <p class="precio">$1,200 MXN</p>
+    </div>
+  </div>
+
+  <a href="productos.html">Regresar</a>
+</body>
+</html>
