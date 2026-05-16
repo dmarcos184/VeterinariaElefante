@@ -6,12 +6,18 @@ class Sucursal(models.Model):
     direccion = models.CharField(max_length=200)
     telefono = models.CharField(max_length=15)
     def __str__(self): return self.nombre
+    class Meta:
+        verbose_name = "Sucursal"
+        verbose_name_plural = "Sucursales"
 
 class Doctor(models.Model):
     nombre = models.CharField(max_length=100)
     especialidad = models.CharField(max_length=100)
     sucursal = models.ForeignKey(Sucursal, on_delete=models.CASCADE)
     def __str__(self): return self.nombre
+    class Meta:
+        verbose_name = "Doctor"
+        verbose_name_plural = "Doctores"
 
 class Servicio(models.Model):
     nombre = models.CharField(max_length=100)
