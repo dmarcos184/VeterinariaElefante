@@ -206,3 +206,72 @@ a:hover {
 .boton-producto:hover {
   background-color: #0056b3;
 }
+
+/* SERVICIOS */
+
+.servicio {
+  background-color: white;
+  margin: 30px auto;
+  padding: 20px;
+  width: 85%;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.servicio:hover {
+  transform: translateY(-5px);
+}
+
+/* Títulos */
+.servicio h2 {
+  text-align: center;
+  color: #2a9d8f;
+  margin-bottom: 15px;
+}
+
+/* Imágenes en fila */
+.servicio img {
+  border-radius: 10px;
+  margin: 10px;
+  transition: 0.3s;
+}
+
+.servicio img:hover {
+  transform: scale(1.05);
+}
+
+/* Contenedor de imágenes */
+.servicio {
+  text-align: center;
+}
+
+/* Lista */
+.servicio ul {
+  margin-top: 15px;
+  text-align: left;
+  display: inline-block;
+}
+
+.servicio li {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .servicio {
+    width: 95%;
+  }
+
+  .servicio img {
+    width: 100%;
+  }
+}
+
+.servicio .imagenes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.pagina-servicios {
+  background-color: peachpuff;
+}

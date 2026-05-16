@@ -1,0 +1,138 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}" />
+</head>
+  <body class="pagina-servicios">
+    <header class="navbar">
+      <img
+        src="{% static 'imagenes/LOGO.png' %}"
+        alt="Logo Elefante Veterinaria"/>
+      <nav>
+        <a href="{% url 'index' %}">Inicio</a>
+        <a href="{% url 'doctores' %}">Nuestros doctores</a>
+        <a href="{% url 'servicios' %}">Servicios</a>
+        <a href="{% url 'productos' %}">Productos</a>
+        <a href="{% url 'sucursales' %}">Sucursales</a>
+      </nav>
+    </header>
+
+    <h1>Nuestros Servicios</h1>
+    <br>
+    <p>Ofrecemos atención integral para el cuidado y bienestar de tus mascotas, brindando siempre un trato profesional, ético y con amor hacia los animales.</p>
+    <br>
+    <p>Contamos con los siguietes servicios:</p>
+    <br>
+    <div class="servicio">
+        <h2>Servicios médicos básicos</h2>
+        <div class="imagenes">
+            <img width="300px" src="{% static 'imagenes/servicios1-1.jpeg' %}" alt="servicios1-1">
+            <img width="300px" src="{% static 'imagenes/servicios1-2.jpeg' %}" alt="servicios1-2">
+            <img width="300px" src="{% static 'imagenes/servicios1-3.jpeg' %}" alt="servicios1-3">
+        </div>
+        <ul>
+            <li>Consultas generales</li>
+            <li>Diagnóstico de enfermedades</li>
+            <li>Revisión física completa</li>
+            <li>Control de peso y nutrición</li>
+        </ul>
+    </div>
+    <br>
+    <div class="servicio">
+        <h2>Vacunación y prevención</h2>
+        <div class="imagenes">
+            <img width="300px" src="{% static 'imagenes/servicios2-1.jpeg' %}" alt="servicios2-1">
+            <img width="300px" src="{% static 'imagenes/servicios2-2.jpeg' %}" alt="servicios2-2">
+        </div>
+        <ul>
+            <li>Aplicación de vacunas</li>
+            <li>Desparasitación interna y externa</li>
+            <li>Control de pulgas y garrapatas</li>
+            <li>Certificados de vacunación</li>
+        </ul>
+    </div>
+    <br>
+    <div class="servicio">
+        <h2>Estudios y laboratorio</h2>
+        <div class="imagenes">
+            <img width="300px" src="{% static 'imagenes/servicios3-1.jpeg' %}" alt="servicios3-1">
+            <img width="300px" src="{% static 'imagenes/servicios3-2.jpeg' %}" alt="servicios3-2">
+            <img width="300px" src="{% static 'imagenes/servicios3-3.jpeg' %}" alt="servicios3-3">
+        </div>
+        <ul>
+            <li>Análisis de sangre</li>
+            <li>Estudios de orina y heces</li>
+            <li>Rayos X</li>
+            <li>Ultrasonido</li>
+        </ul>
+    </div>
+    <br>
+    <div class="servicio">
+        <h2>Hospitalización y urgencias</h2>
+        <div class="imagenes">
+            <img width="300px" src="{% static 'imagenes/servicios4-1.jpeg' %}" alt="servicios4-1">
+            <img width="300px" src="{% static 'imagenes/servicios4-2.jpeg' %}" alt="servicios4-2">
+            <img width="300px" src="{% static 'imagenes/servicios4-3.jpeg' %}" alt="servicios4-3">
+        </div>
+        <ul>
+            <li>Atención de emergencias 24/7</li>
+            <li>Hospitalización</li>
+            <li>Monitoreo continuo</li>
+            <li>Terapias intensivas</li>
+        </ul>
+    </div>
+    <br>
+    <div class="servicio">
+        <h2>Cirugías</h2>
+        <div class="imagenes">
+            <img width="300px" src="{% static 'imagenes/servicios5-1.jpeg' %}" alt="servicios5-1">
+            <img width="300px" src="{% static 'imagenes/servicios5-2.jpeg' %}" alt="servicios5-2">
+            <img width="300px" src="{% static 'imagenes/servicios5-3.jpeg' %}" alt="servicios5-3">
+        </div>
+        <ul>
+            <li>Esterilización (castración)</li>
+            <li>Cirugías generales</li>
+            <li>Cirugías de emergencia</li>
+            <li>Procedimientos especializados</li>
+        </ul>
+    </div>
+    <br>
+    <div class="servicio">
+        <h2>Estética y cuidado</h2>
+        <div class="imagenes">
+            <img width="300px" src="{% static 'imagenes/servicios6-1.jpeg' %}" alt="servicios6-1">
+            <img width="300px" src="{% static 'imagenes/servicios6-2.jpeg' %}" alt="servicios6-2">
+            <img width="300px" src="{% static 'imagenes/servicios6-3.jpeg' %}" alt="servicios6-3">
+        </div>
+        <ul>
+            <li>Baño y corte de pelo</li>
+            <li>Limpieza de oídos</li>
+            <li>Corte de uñas</li>
+            <li>Tratamientos de piel</li>
+        </ul>
+    </div>
+    <br>
+    <div class="servicio">
+        <h2>Otros servicios</h2>
+        <div class="imagenes">
+            <img width="300px" src="{% static 'imagenes/servicios7-1.jpeg' %}" alt="servicios7-1">
+            <img width="300px" src="{% static 'imagenes/servicios7-2.jpeg' %}" alt="servicios7-2">
+        </div>
+        <ul>
+            <li>Venta de alimentos y accesorios</li>
+            <li>Guardería</li>
+            <li>Adiestramiento</li>
+            <li>Certificados de viaje</li>
+        </ul>
+    </div>
+    <br>
+    <footer>
+      <p>&copy; 2026 - Facultad de Contaduría Pública y Administración</p>
+    </footer>
+    
+</body>
+</html>
