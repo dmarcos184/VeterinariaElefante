@@ -7,7 +7,7 @@
     <title>Sucursales</title>
     <link rel="stylesheet" href="{% static 'css/estilos.css' %}" />
 </head>
-<body class="pagina-servicios">
+<body class="pagina-sucursales">
     <header class="navbar">
       <img
         src="{% static 'imagenes/LOGO.png' %}"
@@ -29,12 +29,13 @@
     <br>
     <div class="sucursal">
         {% for a in sucursales %}
-            <h3>{{ a.nombre }}</h3>
-            <p><strong>Dirección:</strong> {{ a.direccion }}</p>
-            <p><strong>Teléfono:</strong> {{ a.telefono }}</p>
+            <div>
+                <h3>{{ a.nombre }}</h3>
+                <p><strong>Dirección:</strong> {{ a.direccion }}</p>
+                <p><strong>Teléfono:</strong> {{ a.telefono }}</p>
+            </div>
         {% endfor %}
-</div>
+    </div>
     <br>
-    
 </body>
 </html>

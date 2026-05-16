@@ -275,3 +275,73 @@ a:hover {
 .pagina-servicios {
   background-color: peachpuff;
 }
+
+/* Página de sucursales */
+.pagina-sucursales {
+  font-family: Arial, sans-serif;
+  background-color: powderblue;
+  padding: 20px;
+}
+
+/* Título */
+.pagina-sucursales h1 {
+  text-align: center;
+  color: darkblue;
+  margin-bottom: 15px;
+}
+
+/* Párrafos */
+.pagina-sucursales p {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 10px auto;
+  color: #444;
+  font-size: 15px;
+}
+
+/* Contenedor de sucursales */
+.sucursal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/* Tarjeta de cada sucursal */
+.sucursal h3,
+.sucursal p {
+  text-align: left;
+}
+
+/* Caja individual */
+.sucursal > h3 {
+  width: 100%;
+}
+
+.sucursal div {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  width: 250px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Hover bonito */
+.sucursal div:hover {
+  transform: translateY(-5px);
+  transition: 0.2s;
+}
+
+/* Título dentro de tarjeta */
+.sucursal h3 {
+  color: #007BFF;
+  margin-bottom: 10px;
+}
+
+/* Texto */
+.sucursal p {
+  font-size: 14px;
+  color: #555;
+}

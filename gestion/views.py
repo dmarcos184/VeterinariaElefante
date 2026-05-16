@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Sucursal
 
 # Create your views here.
 def index(request):
@@ -14,7 +15,9 @@ def productos(request):
     return render(request, 'productos.html')
 
 def sucursales(request):
-    return render(request, 'sucursales.html')
+    sucursales = Sucursal.objects.all()
+    return render(request, 'sucursales.html', {'sucursales': sucursales})
+
 def ppagina1(request):
     return render(request, "ppagina1.html")
 
