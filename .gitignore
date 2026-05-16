@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+
+# Base de datos
+db.sqlite3
+
+# Entorno virtual
+ambiente/
+venv/
+
+# Archivos de VSCode
+.vscode/
+
+# Migraciones compiladas
+*/migrations/__pycache__/
