@@ -6,7 +6,7 @@
     <title>Elefante Veterinaria</title>
     <link rel="stylesheet" href="{% static 'css/estilos.css' %}" />
   </head>
-  <body>
+  <body class="index">
     <header class="navbar">
       <img
         src="{% static 'imagenes/LOGO.png' %}"
@@ -19,6 +19,46 @@
         <a href="{% url 'sucursales' %}">Sucursales</a>
       </nav>
     </header>
+
+    <main>
+      <section class="principal">
+        <h1>Veterinaria Elefante 🐘</h1>
+        <p>Cuidado integral para tus mascotas en un solo lugar</p>
+      </section>
+
+      <section class="seccion">
+        <h2>¿Qué ofrecemos?</h2>
+
+        <div class="contenedor">
+
+          <div class="caja">
+            <h3>👨‍⚕️ Doctores</h3>
+            <p>Profesionales capacitados para cuidar la salud de tu mascota.</p>
+          </div>
+
+          <div class="caja">
+            <h3>🩺 Servicios</h3>
+            <p>Consultas, vacunas, cirugías y más.</p>
+          </div>
+
+          <div class="caja">
+            <h3>🛍️ Productos</h3>
+            <p>Alimentos, accesorios y medicamentos.</p>
+          </div>
+
+          <div class="caja">
+            <h3>📍 Sucursales</h3>
+            <p>Encuentra la clínica más cercana a ti.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="final">
+        <h2>Tu mascota en las mejores manos 🐶🐱</h2>
+        <p>Confía en nosotros para su bienestar</p>
+      </section>
+    </main>
 
     <footer>
       <p>&copy; 2026 - Facultad de Contaduría Pública y Administración</p>
