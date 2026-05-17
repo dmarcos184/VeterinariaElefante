@@ -36,6 +36,19 @@
         <p>Especialista en cirugía y cuidado de animales pequeños.</p>
     </div>
 
+    <br>
+    <h3>Datos de nuestros doctores:</h3>
+    <div class="doctores">
+        {% for a in doctores %}
+            <div>
+                <h3>{{ a.nombre }}</h3>
+                <p><strong>Dirección:</strong> {{ a.especialidad }}</p>
+                <p><strong>Teléfono:</strong> {{ a.sucursal }}</p>
+            </div>
+        {% endfor %}
+    </div>
+    <br>
+
     <footer>
       <p>&copy; 2026 - Facultad de Contaduría Pública y Administración</p>
     </footer>

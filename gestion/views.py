@@ -1,22 +1,29 @@
 from django.shortcuts import render
-from .models import Sucursal
+from .models import Sucursal, Producto, Servicio, Doctor, Empleado
 
 # Create your views here.
 def index(request):
     return render(request, 'index.html')
 
 def doctores(request):
-    return render(request, 'doctores.html')
+    doctores = Doctor.objects.all()
+    return render(request, 'doctores.html', {'doctores': doctores})
 
 def servicios(request):
-    return render(request, 'servicios.html')
+    servicios = Servicio.objects.all()
+    return render(request, 'servicios.html', {'servicios': servicios})
 
 def productos(request):
-    return render(request, 'productos.html')
+    productos = Producto.objects.all()
+    return render(request, 'productos.html', {'productos': productos})
 
 def sucursales(request):
     sucursales = Sucursal.objects.all()
     return render(request, 'sucursales.html', {'sucursales': sucursales})
+
+def empleados(request):
+    empleados = Empleado.objects.all()
+    return render(request, {'empleados': empleados})
 
 def ppagina1(request):
     return render(request, "ppagina1.html")
