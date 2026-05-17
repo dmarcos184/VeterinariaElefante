@@ -1,10 +1,40 @@
-/*General*/
+/* Gobal */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0; /* Solución para que todo quede pegado a los bordes */
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+a {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #007BFF;
+  transition: text-decoration 0.2s;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Navbar */
 .navbar {
   display: flex;
   align-items: center;
@@ -31,6 +61,7 @@
   text-decoration: none;
 }
 
+/* Footer */
 footer {
   display: flex;
   justify-content: center;
@@ -50,52 +81,15 @@ footer img {
   width: 25px;
 }
 
-.pagina-doctores {
-    background-color: #f4f8ff;
-    font-family: Arial, sans-serif;
-}
-
-.pagina-doctores h1 {
-    color: darkblue;
-    text-align: center;
-}
-
-.pagina-doctores div {
-    border: 2px solid #ccc;
-    margin: 20px;
-    padding: 15px;
-    border-radius: 10px;
-    background-color: white;
-}
-
-.pagina-doctores img {
-    border-radius: 10px;
-}
-
-
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f8f8f8;
-  margin: 0;
-  padding: 20px;
-}
-
-h1 {
-  text-align: center;
-  color: #333;
-}
-
-
+/* Contenedores de Tienda/Items */
 .contenedor {
   display: flex;
   flex-wrap: wrap;       
   justify-content: center;
-  gap: 20px;             
+  gap: 25px;            
   margin-top: 30px;
 }
 
-/*producto*/
 .item, .producto {
   width: 220px;
   background-color: #fff;
@@ -111,7 +105,6 @@ h1 {
   transform: scale(1.05);
 }
 
-
 .item img, .producto img {
   width: 100%;
   height: auto;
@@ -119,7 +112,6 @@ h1 {
   margin-bottom: 10px;
 }
 
-/*  Títulos y descripciones  */
 .item h3, .producto h3 {
   font-size: 16px;
   color: #222;
@@ -130,61 +122,6 @@ h1 {
   font-size: 14px;
   color: #555;
   margin: 5px 0;
-}
-
-.precio {
-  font-weight: bold;
-  color: #007BFF;
-}
-
-
-button:hover {
-  background-color: #0056b3;
-}
-
-
-a {
-  display: inline-block;
-  margin-top: 20px;
-  text-decoration: none;
-  color: #007BFF;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-
-
-
-/*********************************/
-.contenedor {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.producto {
-  width: 220px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  text-align: center;
-  padding: 15px;
-  transition: transform 0.2s;
-}
-
-.producto:hover {
-  transform: scale(1.05);
-}
-
-.producto img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 10px;
 }
 
 .precio {
@@ -207,7 +144,32 @@ a:hover {
   background-color: #0056b3;
 }
 
-/* SERVICIOS */
+
+/* Página Doctores */
+.pagina-doctores {
+  background-color: #f4f8ff;
+}
+
+.pagina-doctores h1 {
+  color: darkblue;
+}
+
+.pagina-doctores div {
+  border: 2px solid #ccc;
+  margin: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.pagina-doctores img {
+  border-radius: 10px;
+}
+
+/* Página Servicios */
+.pagina-servicios {
+  background-color: peachpuff;
+}
 
 .servicio {
   background-color: white;
@@ -217,20 +179,24 @@ a:hover {
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   transition: 0.3s;
+  text-align: center;
 }
 
 .servicio:hover {
   transform: translateY(-5px);
 }
 
-/* Títulos */
 .servicio h2 {
-  text-align: center;
   color: #2a9d8f;
   margin-bottom: 15px;
 }
 
-/* Imágenes en fila */
+.servicio .imagenes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .servicio img {
   border-radius: 10px;
   margin: 10px;
@@ -241,12 +207,6 @@ a:hover {
   transform: scale(1.05);
 }
 
-/* Contenedor de imágenes */
-.servicio {
-  text-align: center;
-}
-
-/* Lista */
 .servicio ul {
   margin-top: 15px;
   text-align: left;
@@ -257,40 +217,17 @@ a:hover {
   margin-bottom: 8px;
 }
 
-@media (max-width: 768px) {
-  .servicio {
-    width: 95%;
-  }
-
-  .servicio img {
-    width: 100%;
-  }
-}
-
-.servicio .imagenes {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.pagina-servicios {
-  background-color: peachpuff;
-}
-
-/* Página de sucursales */
+/* Página Sucursales */
 .pagina-sucursales {
-  font-family: Arial, sans-serif;
   background-color: powderblue;
   padding: 20px;
 }
 
-/* Título */
 .pagina-sucursales h1 {
-  text-align: center;
   color: darkblue;
   margin-bottom: 15px;
 }
 
-/* Párrafos */
 .pagina-sucursales p {
   text-align: center;
   max-width: 800px;
@@ -299,7 +236,6 @@ a:hover {
   font-size: 15px;
 }
 
-/* Contenedor de sucursales */
 .sucursal {
   display: flex;
   flex-wrap: wrap;
@@ -308,13 +244,6 @@ a:hover {
   margin-top: 30px;
 }
 
-/* Tarjeta de cada sucursal */
-.sucursal h3,
-.sucursal p {
-  text-align: left;
-}
-
-/* Caja individual */
 .sucursal > h3 {
   width: 100%;
 }
@@ -328,33 +257,30 @@ a:hover {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-/* Hover*/
 .sucursal div:hover {
   transform: translateY(-5px);
   transition: 0.2s;
 }
 
-/* Título dentro de tarjeta */
 .sucursal h3 {
   color: #007BFF;
   margin-bottom: 10px;
+  text-align: left;
 }
 
-/* Texto */
 .sucursal p {
   font-size: 14px;
   color: #555;
+  text-align: left;
 }
 
-/*  Index  */
+/* Vista Index (Home) */
 .index {
-  font-family: "Segoe UI", Arial, sans-serif;
   background-color: #f4f8fb;
 }
 
 .principal {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-              url('../imagenes/veterinaria.jpg');
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../imagenes/veterinaria.jpg');
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -371,7 +297,6 @@ a:hover {
   font-size: 18px;
 }
 
-/*  SECCIÓN  */
 .seccion {
   padding: 60px 20px;
   text-align: center;
@@ -383,15 +308,6 @@ a:hover {
   color: #333;
 }
 
-/*  CONTENEDOR  */
-.contenedor {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 25px;
-}
-
-/*  TARJETAS  */
 .caja {
   width: 260px;
   background: white;
@@ -416,7 +332,6 @@ a:hover {
   color: #555;
 }
 
-/*  Sección final  */
 .final {
   background: linear-gradient(135deg, #007BFF, #00c6ff);
   color: white;
@@ -426,4 +341,15 @@ a:hover {
 
 .final h2 {
   margin-bottom: 10px;
+}
+
+/*  Media Queries */
+@media (max-width: 768px) {
+  .servicio {
+    width: 95%;
+  }
+
+  .servicio img {
+    width: 100%;
+  }
 }

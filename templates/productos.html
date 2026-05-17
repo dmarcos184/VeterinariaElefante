@@ -6,6 +6,19 @@
     <title>productos</title>
 </head>
 <body>
+    <header class="navbar">
+      <img
+        src="{% static 'imagenes/LOGO.png' %}"
+        alt="Logo Elefante Veterinaria"/>
+      <nav>
+        <a href="{% url 'index' %}">Inicio</a>
+        <a href="{% url 'doctores' %}">Nuestros doctores</a>
+        <a href="{% url 'servicios' %}">Servicios</a>
+        <a href="{% url 'productos' %}">Productos</a>
+        <a href="{% url 'sucursales' %}">Sucursales</a>
+      </nav>
+    </header>
+
     <h1>¿Qué es tu mascota?</h1>
 
     <div class="contenedor">
@@ -29,7 +42,9 @@
             <a href="{% url 'ppagina4' %}" class="boton-producto">peces</a>
         </div>
     </div>
-
-    <a href="{% url 'index' %}" class="boton-producto">Regresar</a>
+    
+    <footer>
+      <p>&copy; 2026 - Facultad de Contaduría Pública y Administración</p>
+    </footer>
 </body>
 </html>
